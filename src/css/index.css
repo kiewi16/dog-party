@@ -1,7 +1,11 @@
 @import 'variables';
-
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100; 
+}
 body {
-  background: url('../../dist/images/park.jpg') center/cover;
+  background: url('../../dist/images/park.jpg') center/cover no-repeat;
   height: 100vh;
   width: 100%;
   margin: 0; 
@@ -9,7 +13,7 @@ body {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--secondary-accent-color); 
@@ -25,14 +29,21 @@ nav {
   font-size: 25px;
 }
 
+.nav-links-container {
+  display: flex;
+}
+
 .dog-icon {
   width: 40px;
   height: 40px; 
 }
 
-.nav-links-container {
-  display: flex;
-  border: 3px solid palevioletred
+.how,
+.what,
+.facts {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 19px; 
 }
 
 .main-section-content {
@@ -41,12 +52,15 @@ nav {
   align-items: center; 
   justify-content: center; 
   color: rgb(17,15,15); 
-  height: 600px;  
+  height: 475px;
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
 }
 
 h1 {
   font-size: 2em; 
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .brown-dog-image {
@@ -83,10 +97,15 @@ h1 {
   align-items: center; 
   justify-content: center;
   margin: 0px; 
-  padding: 0px
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 30px; 
+  padding-bottom: 5px; 
 }
 
-h3 {
+.how,
+.what,
+.facts {
   text-align: center; 
 }
 
@@ -122,10 +141,15 @@ h3 {
 }
 
 footer {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
   background-color: var(--main-accent-color);
-  height: 180px; 
-  max-width: 100%; 
+  height: 200px; 
+  width: 100%; 
   color: var(--secondary-font-color);
+  margin: 0;
 }
 
 .footer-content {
@@ -133,13 +157,22 @@ footer {
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
-  max-width: 100%; 
+  text-align: center; 
+  width: 100%; 
 }
 
 .social-media-links {
   display: flex;
-  justify-content: space-around;
-  border: 5px solid pink; 
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icon {
+  padding-left: 30px;
+  padding-right: 30px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border: 2px solid pink;  */
 }
 
 .see-this-on-github {
