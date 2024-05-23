@@ -9,42 +9,54 @@
     <title>Dog Party</title>
   </head>
   <body>
-    <nav>
-      <image class="dog-icon" src="./images/dog-icon.svg" />
-      <p class="how">How</p>
-      <p class="facts">What</p>
-      <p class="facts">Facts</p>
-    </nav>
-    <section class="main-section-wrapper">
-      <section class="main-section">
-        <h1>A Site About Some Dogs</h1>
-        <img src="./images/dog1-sq.jpg" alt="brown dog tilting its head to the right">
-        <button class="what-are-dogs">What are Dogs</button>
+    <header>
+      <image class="dog-icon" src="./images/dog-icon.svg" alt ="dog-logo">
+      <nav>
+        <div class="nav-links-container">
+          <p class="how">How</p>
+          <p class="what">What</p>
+          <p class="facts">Facts</p> 
+        </div>
+      </nav>      
+    </header>
+    <main>
+      <section class="main-section-content">
+          <h1>A Site About Some Dogs</h1>
+          <img src="./images/dog1-sq.jpg" alt="brown dog tilting its head to the right" class="brown-dog-image">
+          <button class="what-are-dogs-button">What are Dogs</button>
       </section>
-    </section>
-    <section class="how-what-facts-section-wrapper">
-      <section class="how-what-facts">
-        <h4 class="How">How</p>
-          <img src="./images/dog2-sq.jpg" alt="light grey dog looking up to the left">
+      <div class="how-what-facts-section">
+        <section class="dog-info-how">
+          <h3 class="How">How</h3>
+          <img src="./images/dog2-sq.jpg" alt="light grey dog looking up to the left" class="dog-image-in-how-what-facts-section">
           <p class="how-to-dog-text">Nap all day Gate keepers of hell yet stares at human while pushing stuff off a table. Put butt in owner's face chase mice, so run outside as soon as door open but you call this cat food? stare at the wall, play with food and get confused by dust.</p>
-          <button class="how-to-dog">How to Dog</button>
-        <h4 class="What">What</p>
-          <img src ="./images/dog3-sq.jpg" alt="black and white dog looking at camera">
+          <button class="how-to-dog-button">How to Dog</button>
+        </section>
+        <section class="dog-info-what">
+          <h3 class="What">What</h3>
+          <img src ="./images/dog3-sq.jpg" alt="black and white dog looking at camera" class="dog-image-in-how-what-facts-section">
           <p class="what-is-dog-text">Soft kitty warm kitty little ball of furr. Hunt anything that moves meowing non stop for food stand in front of the computer screen knock dish off table head butt cant eat out of my own dish, then cats take over the world hide when guests come over.</p>
-          <button class="what-is-dog">What is Dog</button>
-        <h4 class="Facts">Facts</p>
-          <img src="./images/dog4-sq.jpg" alt="small black dog looking at camera">
+          <button class="what-is-dog-button">What is Dog</button>
+        </section>
+        <section class="dog-info-facts">
+          <h3 class="Facts">Facts</h3>
+          <img src="./images/dog4-sq.jpg" alt="small black dog looking at camera" class="dog-image-in-how-what-facts-section">
           <p class="dog-facts-text">Destroy the blinds chase imaginary bugs, so lie on your belly and purr when you are asleep. Fall asleep on the washing machine give attitude hunt anything that moves groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the dog - checked!</p>
-          <button class="dog-facts">Dog Facts</button>
-      </section>
-    </section>
+          <button class="dog-facts-button">Dog Facts</button>
+        </section>  
+      </div>
+    </main> 
     <footer>
-      <p class="learn-about-dogs-online">Learn About Dogs Online</p>
-      <img src="./images/facebook.svg" alt="facebook-icon">
-      <img src="./images/twitter.svg" alt="twitter-icon">
-      <img src="./images/instagram.svg" alt="instagram-icon">
-      <img src="./images/linkedin.svg" alt="linkedin-icon">
-      <p class="see-this-on-github">See this on GitHub</p>
+      <section class="footer-content">
+      <h2 class="learn-about-dogs-online">Learn About Dogs Online</h2>
+        <div class="social-media-links">
+          <img src="./images/facebook.svg" alt="facebook-icon">
+          <img src="./images/twitter.svg" alt="twitter-icon">
+          <img src="./images/instagram.svg" alt="instagram-icon">
+          <img src="./images/linkedin.svg" alt="linkedin-icon">
+        </div>
+        <h3 class="see-this-on-github">See this on GitHub</h3>
+      </section>
     </footer>
     <script src="bundle.js"></script>
   </body>
