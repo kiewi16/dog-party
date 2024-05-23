@@ -4,7 +4,6 @@ body {
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
   width: 100%;
-  font-family: "Raleway", sans-serif;
   margin: 0; 
   padding: 0; 
 }
@@ -18,9 +17,22 @@ header {
   padding: 10px 20px; 
 }
 
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: var(--secondary-font-color);
+  font-size: 25px;
+}
+
 .dog-icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px; 
+}
+
+.nav-links-container {
+  display: flex;
+  border: 3px solid palevioletred
 }
 
 .main-section-content {
@@ -32,32 +44,104 @@ header {
   height: 600px;  
 }
 
+h1 {
+  font-size: 2em; 
+  font-weight: 400;
+}
+
 .brown-dog-image {
   height: 260px;
   width: 260px; 
   border-radius: 50%;
   border: 5px solid var(--main-accent-color); 
+  margin-bottom: 10px
 }
 
 .what-are-dogs-button {
-  background-color: rgb(255,255,255);
+  background-color: var(--background-color);
   border: 4px solid var(--main-accent-color); 
   color: var(--main-accent-color);
-  height: 33px; 
-  width: 131px; 
+  height: 35px; 
+  width: 135px;
+  margin-top: 10px; 
 }
 
 .how-what-facts-section {
   display: flex;
+  justify-content: center; 
+  align-items: center; 
   height: 485px;
-  background-color: rgb(255,255,255);
+  width: 100%; 
+  background-color: var(--secondary-font-color);
+}
+
+.dog-info-how,
+.dog-info-what,
+.dog-info-facts {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin: 0px; 
+  padding: 0px
+}
+
+h3 {
+  text-align: center; 
+}
+
+.dog-image-in-how-what-facts-section {
+  height: 180px;
+  width: 183px;
+  border-radius: 50%;
+  border: 2px solid var(--main-accent-color); 
+  overflow: hidden;
+}
+
+.how-to-dog-text,
+.what-is-dog-text,
+.dog-facts-text {
+  text-align: center; 
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  font-size: 17px;
+}
+
+.how-to-dog-button,
+.what-is-dog-button, 
+.dog-facts-button {
+  height: 35px;
+  width: 110px;
+  background-color: var(--background-color);
+  color: var(--main-accent-color); 
+  border: 4px solid var(--main-accent-color);
+  font-size: 15px;
+  margin: 10px; 
+}
+
+footer {
+  background-color: var(--main-accent-color);
+  height: 180px; 
+  max-width: 100%; 
+  color: var(--secondary-font-color);
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  background-color: var(--main-accent-color);
-  height: 170px;
+  justify-content: center; 
   max-width: 100%; 
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid pink; 
+}
+
+.see-this-on-github {
+  text-decoration: underline;
 }
