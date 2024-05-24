@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "Dog Party starter kit using webpack.",
   "main": "index.js",
+  "homepage": "http://kiewi16.github.io/dog-party",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiewi16/dog-party.git"
+  },
   "scripts": {
     "start": "webpack server",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Turing School of Software and Design",
   "license": "MIT",
