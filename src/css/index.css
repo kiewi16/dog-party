@@ -1,15 +1,178 @@
 @import 'variables';
-
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100; 
+}
 body {
-  background: url('../../dist/images/park.jpg') center/cover;
+  background: url('../../dist/images/park.jpg') center/cover no-repeat;
   height: 100vh;
   width: 100%;
+  margin: 0; 
+  padding: 0; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-accent-color); 
+  width: 100%;
+  height: 45px; 
+  padding: 10px 20px; 
 }
 
 nav {
-  background-color: var(--secondary-accent-color);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: var(--secondary-font-color);
+  font-size: 25px;
+}
+
+.nav-links-container {
+  display: flex;
 }
 
 .dog-icon {
-  width: 50px;
+  width: 40px;
+  height: 40px; 
+}
+
+.how,
+.what,
+.facts {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 19px; 
+}
+
+.main-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  color: rgb(17,15,15); 
+  height: 475px;
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
+}
+
+h1 {
+  font-size: 2em; 
+  font-weight: 200;
+}
+
+.brown-dog-image {
+  height: 260px;
+  width: 260px; 
+  border-radius: 50%;
+  border: 5px solid var(--main-accent-color); 
+  margin-bottom: 10px
+}
+
+.what-are-dogs-button {
+  background-color: var(--background-color);
+  border: 4px solid var(--main-accent-color); 
+  color: var(--main-accent-color);
+  height: 35px; 
+  width: 135px;
+  margin-top: 10px; 
+}
+
+.how-what-facts-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 485px;
+  width: 100%; 
+  background-color: var(--secondary-font-color);
+}
+
+.dog-info-how,
+.dog-info-what,
+.dog-info-facts {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin: 0px; 
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-left: 30px; 
+  padding-bottom: 5px;
+  flex: 1; 
+}
+
+.dog-image-in-how-what-facts-section {
+  height: 180px;
+  width: 183px;
+  border-radius: 50%;
+  border: 2px solid var(--main-accent-color); 
+  overflow: hidden;
+}
+
+.how-to-dog-text,
+.what-is-dog-text,
+.dog-facts-text {
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  font-size: 17px;
+}
+
+.how-to-dog-button,
+.what-is-dog-button, 
+.dog-facts-button {
+  height: 35px;
+  width: 110px;
+  background-color: var(--background-color);
+  color: var(--main-accent-color); 
+  border: 4px solid var(--main-accent-color);
+  font-size: 15px;
+  margin: 10px; 
+}
+
+footer {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background-color: var(--main-accent-color);
+  height: 200px; 
+  width: 100%; 
+  color: var(--secondary-font-color);
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  width: 100%; 
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icon {
+  padding-left: 30px;
+  padding-right: 30px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border: 2px solid pink;  */
+}
+
+.see-this-on-github {
+  text-decoration: underline;
 }
